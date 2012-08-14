@@ -1,0 +1,12 @@
+Story: do div
+    Scenario: give positive numbers
+        Given   20
+        And     30
+        When    divボタンを押す
+        Then    0.67を表示
+
+    Scenario: give negative numbers
+        Given   -20
+        And     -30
+        When    addボタンを押す
+        Then    0.67を表示

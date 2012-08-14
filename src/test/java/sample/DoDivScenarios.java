@@ -13,21 +13,20 @@ import tumbler.Story;
 import tumbler.TumblerRunner;
 
 @RunWith(TumblerRunner.class)
-@Story("do add")
-public class DoAddScenarios {
+@Story("do div")
+public class DoDivScenarios {
 
 	@Scenario
 	public void shouldGivePositiveNumbers() {
 		double result = 0;
-
 		Given("20 and 30");
 		Calculator calc = new Calculator(20, 30);
 
-		When("addボタンを押す");
-		result = calc.add();
+		When("divボタンを押す");
+		result = calc.div();
 
-		Then("50を表示");
-		assertThat(result, is(50.0));
+		Then("0.67を表示");
+		assertThat(result, is(0.67));
 	}
 
 	@Scenario
@@ -36,10 +35,10 @@ public class DoAddScenarios {
 		Given("-20 and -30");
 		Calculator calc = new Calculator(-20, -30);
 
-		When("addボタンを押す");
-		result = calc.add();
+		When("addボタンを押す");
+		result = calc.div();
 
-		Then("-50を表示");
-		assertThat(result, is(-50.0));
+		Then("0.67を表示");
+		assertThat(result, is(0.67));
 	}
 }
