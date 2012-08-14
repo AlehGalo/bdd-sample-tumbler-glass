@@ -1,6 +1,5 @@
 package sample;
 
-import java.math.BigDecimal;
 
 public class Calculator {
 
@@ -17,7 +16,8 @@ public class Calculator {
 	}
 
 	public double div() {
-		BigDecimal bi = new BigDecimal(String.valueOf(num1 / num2));
-		return bi.setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue();
+		// BigDecimal bi = new BigDecimal(String.valueOf(num1 / num2));
+		// return bi.setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue();
+		return num1 / num2;
 	}
 }
