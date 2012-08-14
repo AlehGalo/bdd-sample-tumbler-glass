@@ -2,12 +2,15 @@ package sample;
 
 public class Calculator {
 
+	int num1 = 0;
+	int num2 = 0;
+
 	public Calculator(int i, int j) {
-		// TODO Auto-generated constructor stub
+		this.num1 = i;
+		this.num2 = j;
 	}
 
 	public int add() {
-		// TODO Auto-generated method stub
-		return 0;
+		return num1 + num2;
 	}
 }
