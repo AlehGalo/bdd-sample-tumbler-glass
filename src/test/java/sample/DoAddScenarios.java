@@ -23,7 +23,7 @@ public class DoAddScenarios {
 		Given("20 and 30");
 		Calculator calc = new Calculator(20, 30);
 
-		When("addボタンを押す");
+		When("addボタンを押す");
 		result = calc.add();
 
 		Then("50を表示");
@@ -34,9 +34,9 @@ public class DoAddScenarios {
 	public void shouldGiveNegativeNumbers() {
 		int result = 0;
 		Given("-20 and -30");
-		Calculator calc = new Calculator(20, 30);
+		Calculator calc = new Calculator(-20, -30);
 
-		When("addボタンを押す");
+		When("addボタンを押す");
 		result = calc.add();
 
 		Then("-50を表示");
